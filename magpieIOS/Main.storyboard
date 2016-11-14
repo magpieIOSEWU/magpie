@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="56" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="166" y="174" width="46" height="30"/>
+                                <state key="normal" title="Your Collection">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="174" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="CollectionButton_TouchUpInside:" destination="BYZ-38-t0r" id="1338" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="57" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="294" width="46" height="30"/>
+                                <state key="normal" title="Find Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="225" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="FindLocationButton_TouchUpInside:" destination="BYZ-38-t0r" id="1502" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
+                                <state key="normal" title="Distance">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="263" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DistanceButton_TouchUpInside:" destination="BYZ-38-t0r" id="1503" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1488" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="166" y="311" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="311" width="375" height="2"/>
+                                </variation>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1489" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
+                                <state key="normal" title="Terms of Use">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="353" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="MapButton_TouchUpInside:" destination="1491" id="1490" eventType="touchUpInside"/>
+                                    <action selector="TermsButton_TouchUpInside:" destination="BYZ-38-t0r" id="1504" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1492" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="399" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="MapButton_TouchUpInside:" destination="1494" id="1493" eventType="touchUpInside"/>
+                                    <action selector="PrivacyButton_TouchUpInside:" destination="BYZ-38-t0r" id="1505" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1495" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
+                                <state key="normal" title="Account Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="454" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="MapButton_TouchUpInside:" destination="1497" id="1496" eventType="touchUpInside"/>
+                                    <action selector="AccountSettingsButton_TouchUpInside:" destination="BYZ-38-t0r" id="1506" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1498" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="166" y="311" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="500" width="375" height="2"/>
+                                </variation>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1499" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="528" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="MapButton_TouchUpInside:" destination="1501" id="1500" eventType="touchUpInside"/>
+                                    <action selector="LogoutButton_TouchUpInside:" destination="BYZ-38-t0r" id="1507" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="56"/>
+                                <exclude reference="57"/>
+                                <exclude reference="58"/>
+                                <exclude reference="1488"/>
+                                <exclude reference="1489"/>
+                                <exclude reference="1492"/>
+                                <exclude reference="1495"/>
+                                <exclude reference="1498"/>
+                                <exclude reference="1499"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="56"/>
+                                <include reference="57"/>
+                                <include reference="58"/>
+                                <include reference="1488"/>
+                                <include reference="1489"/>
+                                <include reference="1492"/>
+                                <include reference="1495"/>
+                                <include reference="1498"/>
+                                <include reference="1499"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="distanceButton" destination="58" id="name-outlet-58"/>
+                        <outlet property="findLocationButton" destination="57" id="name-outlet-57"/>
+                        <outlet property="collectionButton" destination="56" id="name-outlet-56"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
+                        <outlet property="lineBreak" destination="1488" id="name-outlet-1488"/>
+                        <outlet property="termsButton" destination="1489" id="name-outlet-1489"/>
+                        <outlet property="privacyButton" destination="1492" id="name-outlet-1492"/>
+                        <outlet property="accountSettingsButton" destination="1495" id="name-outlet-1495"/>
+                        <outlet property="logoutButton" destination="1499" id="name-outlet-1499"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>
