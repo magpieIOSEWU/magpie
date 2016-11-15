@@ -180,13 +180,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3846" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="196" width="375" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3846" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="77" y="196" width="242" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4563" translatesAutoresizingMaskIntoConstraints="NO" placeholder="CITY, STATE" textAlignment="center">
+                                <rect key="frame" x="71" y="415" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4564" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="71" y="533" width="248" height="30"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4711" destination="4568" kind="show"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint id="4717" firstItem="3846" firstAttribute="top" secondItem="3273" secondAttribute="bottom" constant="132"/>
+                            <constraint id="4718" firstItem="3846" firstAttribute="leading" secondItem="3277" secondAttribute="leading" constant="77"/>
+                            <constraint id="4719" firstItem="3277" firstAttribute="trailing" secondItem="3846" secondAttribute="trailing" constant="56"/>
+                            <constraint id="4720" firstItem="4563" firstAttribute="top" secondItem="3273" secondAttribute="bottom" constant="351"/>
+                            <constraint id="4721" firstItem="3277" firstAttribute="trailing" secondItem="4563" secondAttribute="trailing" constant="56"/>
+                            <constraint id="4722" firstItem="4563" firstAttribute="leading" secondItem="3277" secondAttribute="leading" constant="71"/>
+                            <constraint id="4723" firstItem="4564" firstAttribute="leading" secondItem="3277" secondAttribute="leading" constant="71"/>
+                            <constraint id="4724" firstItem="3277" firstAttribute="trailing" secondItem="4564" secondAttribute="trailing" constant="56"/>
+                            <constraint id="4725" firstItem="4564" firstAttribute="top" secondItem="3273" secondAttribute="bottom" constant="469"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3278" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -292,6 +317,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4356" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="350" y="-1509"/>
+        </scene>
+        <scene sceneID="4567">
+            <objects>
+                <viewController id="4568" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4565"/>
+                        <viewControllerLayoutGuide type="bottom" id="4566"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4569">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4696" translatesAutoresizingMaskIntoConstraints="NO" text="DISTANCE AWAY">
+                                <rect key="frame" x="68" y="106" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4731" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="29" y="183" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="4735" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="135" y="277" width="118" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4739" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="124" y="430" width="129" height="30"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4877" destination="4750" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4728" firstItem="4696" firstAttribute="top" secondItem="4565" secondAttribute="bottom" constant="42"/>
+                            <constraint id="4729" firstItem="4696" firstAttribute="leading" secondItem="4569" secondAttribute="leading" constant="68"/>
+                            <constraint id="4730" firstItem="4569" firstAttribute="trailing" secondItem="4696" secondAttribute="trailing" constant="55"/>
+                            <constraint id="4732" firstItem="4731" firstAttribute="leading" secondItem="4569" secondAttribute="leading" constant="29"/>
+                            <constraint id="4733" firstItem="4569" firstAttribute="trailing" secondItem="4731" secondAttribute="trailing" constant="132"/>
+                            <constraint id="4734" firstItem="4731" firstAttribute="top" secondItem="4565" secondAttribute="bottom" constant="119"/>
+                            <constraint id="4744" firstItem="4735" firstAttribute="leading" secondItem="4569" secondAttribute="leading" constant="135"/>
+                            <constraint id="4745" firstItem="4569" firstAttribute="trailing" secondItem="4735" secondAttribute="trailing" constant="122"/>
+                            <constraint id="4746" firstItem="4735" firstAttribute="top" secondItem="4565" secondAttribute="bottom" constant="213"/>
+                            <constraint id="4889" firstItem="4739" firstAttribute="top" secondItem="4565" secondAttribute="bottom" constant="366"/>
+                            <constraint id="4890" firstItem="4569" firstAttribute="trailing" secondItem="4739" secondAttribute="trailing" constant="122"/>
+                            <constraint id="4891" firstItem="4739" firstAttribute="leading" secondItem="4569" secondAttribute="leading" constant="124"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4570" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="836"/>
+        </scene>
+        <scene sceneID="4749">
+            <objects>
+                <viewController id="4750" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4747"/>
+                        <viewControllerLayoutGuide type="bottom" id="4748"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4751">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4754" translatesAutoresizingMaskIntoConstraints="NO" text="ITEMS NEAR YOU/ COLLECTIONS">
+                                <rect key="frame" x="0.0" y="160" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4758" firstAttribute="width" constant="375"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4756" firstItem="4751" firstAttribute="trailing" secondItem="4754" secondAttribute="trailing"/>
+                            <constraint id="4757" firstItem="4754" firstAttribute="top" secondItem="4751" secondAttribute="top" constant="160"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4752" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="843"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
