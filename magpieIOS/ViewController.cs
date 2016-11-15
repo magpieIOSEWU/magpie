@@ -25,39 +25,41 @@ namespace magpieIOS
 
 
 
-		partial void CollectionButton_TouchUpInside(UIButton sender)
-		{
-			throw new NotImplementedException();
-		}
 
-		partial void FindLocationButton_TouchUpInside(UIButton sender)
-		{
-			throw new NotImplementedException();
-		}
-
-		partial void DistanceButton_TouchUpInside(UIButton sender)
-		{
-			throw new NotImplementedException();
-		}
-
-		partial void TermsButton_TouchUpInside(UIButton sender)
-		{
-			throw new NotImplementedException();
-		}
-
-		partial void PrivacyButton_TouchUpInside(UIButton sender)
-		{
-			throw new NotImplementedException();
-		}
 
 		partial void AccountSettingsButton_TouchUpInside(UIButton sender)
 		{
-			throw new NotImplementedException();
+			
 		}
 
 		partial void LogoutButton_TouchUpInside(UIButton sender)
 		{
-			throw new NotImplementedException();
+			
+		}
+
+		partial void PrivatcyPolicyButton_TouchUpInside(UIButton sender)
+		{
+			
+		}
+
+		partial void TermsOfUseButton_TouchUpInside(UIButton sender)
+		{
+			
+		}
+
+		partial void DistanceAwayButton_TouchUpInside(UIButton sender)
+		{
+			
+		}
+
+		partial void FindLocationButton_TouchUpInside(UIButton sender)
+		{
+			
+		}
+
+		partial void CollecitonsButoon_TouchUpInside(UIButton sender)
+		{
+			
 		}
 	}
 }

@@ -7,3 +7,10 @@
 /Users/zackjohnson/Projects/magpieIOS/magpieIOS/bin/iPhoneSimulator/Debug/magpieIOS.exe
 /Users/zackjohnson/Projects/magpieIOS/magpieIOS/obj/iPhoneSimulator/Debug/magpieIOS.exe
 /Users/zackjohnson/Projects/magpieIOS/magpieIOS/obj/iPhoneSimulator/Debug/magpieIOS.exe.mdb
+/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/zackjohnson/Desktop/magpie/magpieIOS/bin/iPhoneSimulator/Debug/magpieIOS.exe.mdb
+/Users/zackjohnson/Desktop/magpie/magpieIOS/bin/iPhoneSimulator/Debug/magpieIOS.exe
+/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/magpieIOS.exe
+/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/magpieIOS.exe.mdb
