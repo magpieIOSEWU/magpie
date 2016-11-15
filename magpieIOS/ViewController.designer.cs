@@ -20,19 +20,15 @@ namespace magpieIOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton collectionButton { get; set; }
+        UIKit.UIButton collecitonsButoon { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton distanceButton { get; set; }
+        UIKit.UIButton distanceAwayButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton findLocationButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lineBreak { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -44,23 +40,23 @@ namespace magpieIOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton privacyButton { get; set; }
+        UIKit.UIButton privatcyPolicyButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton termsButton { get; set; }
+        UIKit.UIButton termsOfUseButton { get; set; }
 
         [Action ("AccountSettingsButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void AccountSettingsButton_TouchUpInside (UIKit.UIButton sender);
 
-        [Action ("CollectionButton_TouchUpInside:")]
+        [Action ("CollecitonsButoon_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void CollectionButton_TouchUpInside (UIKit.UIButton sender);
+        partial void CollecitonsButoon_TouchUpInside (UIKit.UIButton sender);
 
-        [Action ("DistanceButton_TouchUpInside:")]
+        [Action ("DistanceAwayButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void DistanceButton_TouchUpInside (UIKit.UIButton sender);
+        partial void DistanceAwayButton_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("FindLocationButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -70,13 +66,13 @@ namespace magpieIOS
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void LogoutButton_TouchUpInside (UIKit.UIButton sender);
 
-        [Action ("PrivacyButton_TouchUpInside:")]
+        [Action ("PrivatcyPolicyButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void PrivacyButton_TouchUpInside (UIKit.UIButton sender);
+        partial void PrivatcyPolicyButton_TouchUpInside (UIKit.UIButton sender);
 
-        [Action ("TermsButton_TouchUpInside:")]
+        [Action ("TermsOfUseButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void TermsButton_TouchUpInside (UIKit.UIButton sender);
+        partial void TermsOfUseButton_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
@@ -85,24 +81,19 @@ namespace magpieIOS
                 accountSettingsButton = null;
             }
 
-            if (collectionButton != null) {
-                collectionButton.Dispose ();
-                collectionButton = null;
+            if (collecitonsButoon != null) {
+                collecitonsButoon.Dispose ();
+                collecitonsButoon = null;
             }
 
-            if (distanceButton != null) {
-                distanceButton.Dispose ();
-                distanceButton = null;
+            if (distanceAwayButton != null) {
+                distanceAwayButton.Dispose ();
+                distanceAwayButton = null;
             }
 
             if (findLocationButton != null) {
                 findLocationButton.Dispose ();
                 findLocationButton = null;
-            }
-
-            if (lineBreak != null) {
-                lineBreak.Dispose ();
-                lineBreak = null;
             }
 
             if (logoutButton != null) {
@@ -115,14 +106,14 @@ namespace magpieIOS
                 mainView = null;
             }
 
-            if (privacyButton != null) {
-                privacyButton.Dispose ();
-                privacyButton = null;
+            if (privatcyPolicyButton != null) {
+                privatcyPolicyButton.Dispose ();
+                privatcyPolicyButton = null;
             }
 
-            if (termsButton != null) {
-                termsButton.Dispose ();
-                termsButton = null;
+            if (termsOfUseButton != null) {
+                termsOfUseButton.Dispose ();
+                termsOfUseButton = null;
             }
         }
     }

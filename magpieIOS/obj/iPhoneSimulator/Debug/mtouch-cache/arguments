@@ -2,9 +2,9 @@
 # [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.2.1.5/lib/mtouch/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.2.1.5/lib/mtouch/mtouch.exe \
 	--cache \
-	/Users/zackjohnson/Projects/magpieIOS/magpieIOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/zackjohnson/Projects/magpieIOS/magpieIOS/bin/iPhoneSimulator/Debug/magpieIOS.app \
+	/Users/zackjohnson/Desktop/magpie/magpieIOS/bin/iPhoneSimulator/Debug/magpieIOS.app \
 	--executable \
 	magpieIOS \
 	--fastdev \
@@ -20,7 +20,7 @@
 	--tls-provider=default \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/zackjohnson/Projects/magpieIOS/magpieIOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/zackjohnson/Desktop/magpie/magpieIOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -34,4 +34,4 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/zackjohnson/Projects/magpieIOS/magpieIOS/bin/iPhoneSimulator/Debug//magpieIOS.exe \
+	/Users/zackjohnson/Desktop/magpie/magpieIOS/bin/iPhoneSimulator/Debug//magpieIOS.exe \

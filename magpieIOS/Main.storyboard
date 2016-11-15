@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1557">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
     </dependencies>
@@ -13,161 +13,285 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="56" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="166" y="174" width="46" height="30"/>
-                                <state key="normal" title="Your Collection">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1512" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="86" y="99" width="204" height="30"/>
+                                <state key="normal" title="YOUR COLLECTIONS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="174" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="CollectionButton_TouchUpInside:" destination="BYZ-38-t0r" id="1338" eventType="touchUpInside"/>
+                                    <action selector="CollecitonsButoon_TouchUpInside:" destination="BYZ-38-t0r" id="1523" eventType="touchUpInside"/>
+                                    <segue id="3253" destination="2954" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="57" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="294" width="46" height="30"/>
-                                <state key="normal" title="Find Location">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1513" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="76" y="156" width="223" height="30"/>
+                                <state key="normal" title="FIND YOUR LOCATION">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="225" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="FindLocationButton_TouchUpInside:" destination="BYZ-38-t0r" id="1502" eventType="touchUpInside"/>
+                                    <action selector="FindLocationButton_TouchUpInside:" destination="BYZ-38-t0r" id="1524" eventType="touchUpInside"/>
+                                    <segue id="3844" destination="3276" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="374" width="46" height="30"/>
-                                <state key="normal" title="Distance">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1514" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="109" y="214" width="157" height="30"/>
+                                <state key="normal" title="DISTANCE AWAY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="263" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="DistanceButton_TouchUpInside:" destination="BYZ-38-t0r" id="1503" eventType="touchUpInside"/>
+                                    <action selector="DistanceAwayButton_TouchUpInside:" destination="BYZ-38-t0r" id="1525" eventType="touchUpInside"/>
+                                    <segue id="3906" destination="3850" kind="show"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1488" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="166" y="311" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="311" width="375" height="2"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1489" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="374" width="46" height="30"/>
-                                <state key="normal" title="Terms of Use">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1516" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="94" y="298" width="186" height="30"/>
+                                <state key="normal" title="TERMS OF USE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="353" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="MapButton_TouchUpInside:" destination="1491" id="1490" eventType="touchUpInside"/>
-                                    <action selector="TermsButton_TouchUpInside:" destination="BYZ-38-t0r" id="1504" eventType="touchUpInside"/>
+                                    <action selector="TermsOfUseButton_TouchUpInside:" destination="BYZ-38-t0r" id="1527" eventType="touchUpInside"/>
+                                    <segue id="4284" destination="3912" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1492" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="374" width="46" height="30"/>
-                                <state key="normal" title="Privacy Policy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1517" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="394" width="335" height="30"/>
+                                <state key="normal" title="PRIVACY POLICY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="399" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="MapButton_TouchUpInside:" destination="1494" id="1493" eventType="touchUpInside"/>
-                                    <action selector="PrivacyButton_TouchUpInside:" destination="BYZ-38-t0r" id="1505" eventType="touchUpInside"/>
+                                    <action selector="PrivatcyPolicyButton_TouchUpInside:" destination="BYZ-38-t0r" id="1528" eventType="touchUpInside"/>
+                                    <segue id="4349" destination="4290" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1495" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="374" width="46" height="30"/>
-                                <state key="normal" title="Account Settings">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1518" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="81" y="468" width="213" height="30"/>
+                                <state key="normal" title="ACCOUNT SETTINGS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="454" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="MapButton_TouchUpInside:" destination="1497" id="1496" eventType="touchUpInside"/>
-                                    <action selector="AccountSettingsButton_TouchUpInside:" destination="BYZ-38-t0r" id="1506" eventType="touchUpInside"/>
+                                    <action selector="AccountSettingsButton_TouchUpInside:" destination="BYZ-38-t0r" id="1529" eventType="touchUpInside"/>
+                                    <segue id="4407" destination="4354" kind="show"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1498" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="166" y="311" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="500" width="375" height="2"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1499" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="164" y="374" width="46" height="30"/>
-                                <state key="normal" title="Logout">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1521" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="80" y="581" width="214" height="30"/>
+                                <state key="normal" title="LOGOUT">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="528" width="375" height="30"/>
-                                </variation>
                                 <connections>
-                                    <action selector="MapButton_TouchUpInside:" destination="1501" id="1500" eventType="touchUpInside"/>
-                                    <action selector="LogoutButton_TouchUpInside:" destination="BYZ-38-t0r" id="1507" eventType="touchUpInside"/>
+                                    <action selector="LogoutButton_TouchUpInside:" destination="BYZ-38-t0r" id="1530" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="56"/>
-                                <exclude reference="57"/>
-                                <exclude reference="58"/>
-                                <exclude reference="1488"/>
-                                <exclude reference="1489"/>
-                                <exclude reference="1492"/>
-                                <exclude reference="1495"/>
-                                <exclude reference="1498"/>
-                                <exclude reference="1499"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="56"/>
-                                <include reference="57"/>
-                                <include reference="58"/>
-                                <include reference="1488"/>
-                                <include reference="1489"/>
-                                <include reference="1492"/>
-                                <include reference="1495"/>
-                                <include reference="1498"/>
-                                <include reference="1499"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint id="4455" firstItem="1513" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92"/>
+                            <constraint id="4456" firstItem="1513" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="76"/>
+                            <constraint id="4457" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1513" secondAttribute="trailing" constant="76"/>
+                            <constraint id="4460" firstItem="1512" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35"/>
+                            <constraint id="4461" firstItem="1512" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="86"/>
+                            <constraint id="4462" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1512" secondAttribute="trailing" constant="85"/>
+                            <constraint id="4467" firstItem="1514" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150"/>
+                            <constraint id="4468" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1514" secondAttribute="trailing" constant="109"/>
+                            <constraint id="4469" firstItem="1514" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="109"/>
+                            <constraint id="4523" firstItem="1521" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="517"/>
+                            <constraint id="4524" firstItem="1521" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80"/>
+                            <constraint id="4525" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1521" secondAttribute="trailing" constant="81"/>
+                            <constraint id="4528" firstItem="1516" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="234"/>
+                            <constraint id="4529" firstItem="1516" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="94"/>
+                            <constraint id="4530" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1516" secondAttribute="trailing" constant="95"/>
+                            <constraint id="4533" firstItem="1518" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="404"/>
+                            <constraint id="4534" firstItem="1518" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="81"/>
+                            <constraint id="4535" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1518" secondAttribute="trailing" constant="81"/>
+                            <constraint id="4536" firstItem="wfy-db-euE" firstAttribute="top" secondItem="1521" secondAttribute="bottom" constant="56"/>
+                            <constraint id="4550" firstItem="1517" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="330"/>
+                            <constraint id="4551" firstItem="1517" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="4552" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1517" secondAttribute="trailing" constant="20"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="distanceButton" destination="58" id="name-outlet-58"/>
-                        <outlet property="findLocationButton" destination="57" id="name-outlet-57"/>
-                        <outlet property="collectionButton" destination="56" id="name-outlet-56"/>
                         <outlet property="mainView" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
-                        <outlet property="lineBreak" destination="1488" id="name-outlet-1488"/>
-                        <outlet property="termsButton" destination="1489" id="name-outlet-1489"/>
-                        <outlet property="privacyButton" destination="1492" id="name-outlet-1492"/>
-                        <outlet property="accountSettingsButton" destination="1495" id="name-outlet-1495"/>
-                        <outlet property="logoutButton" destination="1499" id="name-outlet-1499"/>
+                        <outlet property="collecitonsButoon" destination="1512" id="name-outlet-1512"/>
+                        <outlet property="findLocationButton" destination="1513" id="name-outlet-1513"/>
+                        <outlet property="distanceAwayButton" destination="1514" id="name-outlet-1514"/>
+                        <outlet property="termsOfUseButton" destination="1516" id="name-outlet-1516"/>
+                        <outlet property="privatcyPolicyButton" destination="1517" id="name-outlet-1517"/>
+                        <outlet property="accountSettingsButton" destination="1518" id="name-outlet-1518"/>
+                        <outlet property="logoutButton" destination="1521" id="name-outlet-1521"/>
                     </connections>
+                    <navigationItem title="Title" id="2680" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="1556">
+            <objects>
+                <navigationController id="1557" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1559">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="2681" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1560" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462" y="-4"/>
+        </scene>
+        <scene sceneID="2953">
+            <objects>
+                <viewController id="2954" sceneMemberID="viewController" customClass="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2951"/>
+                        <viewControllerLayoutGuide type="bottom" id="2952"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2955">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View controler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2958" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="306" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2956" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="-70"/>
+        </scene>
+        <scene sceneID="3275">
+            <objects>
+                <viewController id="3276" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3273"/>
+                        <viewControllerLayoutGuide type="bottom" id="3274"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3277">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3846" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="196" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3278" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="824"/>
+        </scene>
+        <scene sceneID="3849">
+            <objects>
+                <viewController id="3850" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3847"/>
+                        <viewControllerLayoutGuide type="bottom" id="3848"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3851">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance away" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3908" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="190" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3852" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="1604"/>
+        </scene>
+        <scene sceneID="3911">
+            <objects>
+                <viewController id="3912" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3909"/>
+                        <viewControllerLayoutGuide type="bottom" id="3910"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3913">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4286" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="150" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3914" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="1540"/>
+        </scene>
+        <scene sceneID="4289">
+            <objects>
+                <viewController id="4290" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4287"/>
+                        <viewControllerLayoutGuide type="bottom" id="4288"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4291">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4294" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="288" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4292" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="-856"/>
+        </scene>
+        <scene sceneID="4353">
+            <objects>
+                <viewController id="4354" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4351"/>
+                        <viewControllerLayoutGuide type="bottom" id="4352"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4355">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4358" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="283" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4356" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="-1509"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
