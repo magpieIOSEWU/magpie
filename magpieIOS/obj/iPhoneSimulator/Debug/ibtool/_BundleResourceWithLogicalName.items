@@ -21,10 +21,6 @@
       <LogicalName>Main.storyboardc/3276-view-3277.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/3850-view-3851.nib">
-      <LogicalName>Main.storyboardc/3850-view-3851.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/3912-view-3913.nib">
       <LogicalName>Main.storyboardc/3912-view-3913.nib</LogicalName>
       <Optimize>false</Optimize>
@@ -41,6 +37,13 @@
       <LogicalName>Main.storyboardc/4568-view-4569.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+<<<<<<< HEAD
+=======
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/4750-view-4751.nib">
+      <LogicalName>Main.storyboardc/4750-view-4751.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+>>>>>>> zack's-branch
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib">
       <LogicalName>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</LogicalName>
       <Optimize>false</Optimize>
@@ -61,10 +64,6 @@
       <LogicalName>Main.storyboardc/UIViewController-3276.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-3850.nib">
-      <LogicalName>Main.storyboardc/UIViewController-3850.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-3912.nib">
       <LogicalName>Main.storyboardc/UIViewController-3912.nib</LogicalName>
       <Optimize>false</Optimize>
@@ -81,5 +80,12 @@
       <LogicalName>Main.storyboardc/UIViewController-4568.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+<<<<<<< HEAD
+=======
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-4750.nib">
+      <LogicalName>Main.storyboardc/UIViewController-4750.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+>>>>>>> zack's-branch
   </ItemGroup>
 </Project>
