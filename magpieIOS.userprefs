@@ -1,15 +1,5 @@
 ﻿<Properties StartupConfiguration="{9A38E58C-EF18-4123-82E0-BCBDDE323C83}|Default">
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="magpieIOS/ViewController.cs">
-    <Files>
-      <File FileName="magpieIOS/ViewController.cs" Line="27" Column="3" />
-=======
-  <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="magpieIOS/ViewController.cs" Line="30" Column="8" />
->>>>>>> master
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

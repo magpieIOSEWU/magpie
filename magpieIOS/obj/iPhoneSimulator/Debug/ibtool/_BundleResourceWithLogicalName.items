@@ -21,10 +21,6 @@
       <LogicalName>Main.storyboardc/3276-view-3277.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/3850-view-3851.nib">
-      <LogicalName>Main.storyboardc/3850-view-3851.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/3912-view-3913.nib">
       <LogicalName>Main.storyboardc/3912-view-3913.nib</LogicalName>
       <Optimize>false</Optimize>
@@ -63,10 +59,6 @@
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-3276.nib">
       <LogicalName>Main.storyboardc/UIViewController-3276.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-3850.nib">
-      <LogicalName>Main.storyboardc/UIViewController-3850.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-3912.nib">
